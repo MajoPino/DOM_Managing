@@ -10,3 +10,64 @@
 h1{
     margin: 0
 }
+
+.circle{
+    margin-left: 50px;
+    background-color: #5832c0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* transition: background linear 1s; */
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+/* .circle:active{
+    background-color: #534ce1;
+} */
+
+
+@keyframes changeColor {
+    0% {
+        background-color: #110a21;
+    }
+    25%{
+        background-color: #25154f;
+    }
+    50% {
+        background-color: #42268d;
+    }
+    75% {
+        background-color: #5832c0;
+    }
+    100% {
+        background-color: #6f69e9;
+    }
+}
+
+.circle2{
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: #d43b1c;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+    animation: 2s changePosition infinite;
+}
+
+@keyframes changePosition {
+    0%{
+      transform: translate(0);
+      background-color: #47150b;
+    }
+    25%{
+        transform: translate(100%);
+        background-color: #d43b1c;
+    }
+    50%{
+        transform: translate(100%, 100%);
+        background-color: #f74825;
+    }
+}
